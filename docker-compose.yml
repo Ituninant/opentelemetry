@@ -48,7 +48,7 @@ services:
 
 
   otel-collector:
-    image: otel/opentelemetry-collector-contrib:0.90.0
+    image: otel/opentelemetry-collector-contrib:0.105.0
     command: [ "--config=/etc/otel-collector-config.yml" ]
     volumes:
       - ./config/otel-collector/otel-collector-config.yml:/etc/otel-collector-config.yml
